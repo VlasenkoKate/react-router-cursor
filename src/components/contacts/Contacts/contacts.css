@@ -1,0 +1,40 @@
+.wrapper_contacts {
+  width: 360px;
+  height: 600px;
+  margin: 20px auto 20px auto;
+  border: 1px solid gray;
+  background-color: white;
+}
+
+.contact_header_icon {
+  width: 35px;
+  height: 35px;
+  fill: darkblue;
+  padding: 15px;
+}
+.top {
+  background-color: lightblue;
+  width: 360px;
+  height: 70px;
+  display: flex;
+  justify-content: space-between;
+}
+.header {
+  font-size: 20px;
+  padding-left: 20px;
+  font-weight: 700;
+  color: darkblue;
+  margin-top: 20px
+}
+.input {
+  height: 30px;
+  width: 250px;
+  text-align: center;
+  box-sizing: border-box;
+}
+
+.search {
+  text-align: center;
+  padding: 5px;
+  background-color: rgb(39, 39, 114);
+}

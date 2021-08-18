@@ -1,0 +1,18 @@
+.container_pictures {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 960px;
+    justify-content: space-evenly;
+    margin: auto;
+}
+
+
+
+.picture {
+    width: 300px;
+    height: 300px;
+    border: 1px solid white;
+    box-shadow: 0 0 10px lightgrey;
+    padding: 2px;
+    margin: 5px;
+}

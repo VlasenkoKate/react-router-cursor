@@ -1,0 +1,93 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+  min-height: 100%;
+  margin: 0;
+  font-family: 'Arial', sans-serif;
+    background-image: url(/Users/ekaterinavlasenko/Desktop/vjgv/cursor-homework/CURSOR_ADVANCED/19/19-hw/19/src/assets/main.jpeg);
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.App {
+  margin: auto;
+  max-width: 960px;
+}
+
+nav {
+  display: flex;
+  justify-content: space-evenly;
+  margin: 2em;
+}
+
+.main_text {
+  color: #185dbe;
+  width: 450px;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 2rem;
+  text-align: center;
+  border: 1px solid #185dbe;
+  background-color: white;
+  box-shadow: 0 0 10px lightgrey;
+  border-radius: 10px;
+  margin: 50px auto auto auto;
+  padding: 10px;
+}
+
+a {
+  background: #21638f;
+  color: #fff;
+  border: 0.1rem solid #0d2c41;
+  padding: 0.85em 0.75em;
+  margin: 1rem;
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+  text-decoration: none;
+  display: inline-block;
+  padding: 10px 30px;
+  margin: 10px 20px;
+  font-family: 'Montserrat', sans-serif;
+}
+
+a:before {
+  content: "";
+  background: linear-gradient(90deg, rgba(255, 255, 255, .1), rgba(255, 255, 255, .5));
+  height: 50px;
+  width: 50px;
+  position: absolute;
+  top: -8px;
+  left: -75px;
+  transform: skewX(-45deg);
+}
+a:hover {
+  color: #0d2c41;
+}
+a::after {
+  content: "";
+  background: #ecf0f1;
+  position: absolute;
+  z-index: -1;
+  padding: 0.85em 0.75em;
+  display: block;
+  transition: all 0.35s;
+  top: 0;
+  bottom: 0;
+  left: -100%;
+  right: 100%;
+}
+
+a:hover::after {
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  transition: all 0.35s;
+}
+
+a.selected {
+  background: #ecf0f1;
+  color: #3498db;
+}
